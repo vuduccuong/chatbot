@@ -7,7 +7,7 @@ var rl = readline.createInterface({
   output: process.stdout
 });
 
-const obj = {email: "Email", password: "Pass"};
+const obj = {email: "vuduc.cuong4", password: "cuongpr0"};
 login(obj, (err, api) => {
     if(err) {
         switch (err.error) {

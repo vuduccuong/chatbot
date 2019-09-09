@@ -20,8 +20,8 @@ login({appState: JSON.parse(fs.readFileSync('appstate.json', 'utf8'))}, (err, ap
             // Group cũng thế
             var blockUserIds =["10002701265xx59","100008xx2353680"];
             var blockGroupIds =["2406280742789782","2705897476091143"];
-            var crushId ="10002701265xx59";
-            var myLoveId ="100008xx2353680";
+            var crushId ="100004326754690";
+            var myLoveId ="100038833934028";
 
 
             if(blockUserIds.find(x=>x ==message.threadID)){
@@ -33,19 +33,19 @@ login({appState: JSON.parse(fs.readFileSync('appstate.json', 'utf8'))}, (err, ap
             }
 
             //Chức năng này dành cho người muốn nhắn riêng với id nào đó
-            // switch(message.threadID){
-            //     case crushId:
-            //             api.sendMessage("Chào crush", message.threadID);
-            //         break;
-            //     case myLoveId:
-            //                 api.sendMessage("Chào ny", message.threadID);
-            //             break;
-            // }
+            switch(message.threadID){
+                case crushId:
+                        api.sendMessage("Chào Đạt", message.threadID);
+                    break;
+                case myLoveId:
+                            api.sendMessage("Chào Luyến", message.threadID);
+                        break;
+            }
  
 
 
             answeredThreads[message.threadID] = true;
-            api.sendMessage("BOT - Hiện tại mình Không online, mình sẽ trả lời bạn ngay khi online, hoặc gọi cho mình: 0973.642.632", message.threadID);
+            api.sendMessage("BOT - Hiện tại CườngVjpPro không online, mình sẽ trả lời bạn ngay khi online, hoặc gọi cho mình: 034.338.2777", message.threadID);
        
        
        
