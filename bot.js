@@ -18,8 +18,8 @@ login({appState: JSON.parse(fs.readFileSync('appstate.json', 'utf8'))}, (err, ap
             // Tìm id ở đây https://findmyfbid.in/
             // Thêm 1 người vào chỉ cần thêm dấu ,"ID người"
             // Group cũng thế
-            var blockUserIds =["10002701265xx59","100008xx2353680"];
-            var blockGroupIds =["2406280742789782","2705897476091143"];
+            var blockUserIds =[];
+            var blockGroupIds =[];
             var crushId ="100004326754690";
             var myLoveId ="100038833934028";
 
